@@ -632,6 +632,7 @@
         <a href="#/ofertas"><span class="ic">🏷️</span>Mis cupones (${ui.wallet.length})<span class="ar">›</span></a>
         <a href="#/revendedoras"><span class="ic">💼</span>Programa de revendedoras<span class="ar">›</span></a>
         <button id="pushperm"><span class="ic">📲</span>Activar notificaciones del celular<span class="ar">›</span></button>
+        <button type="button" data-theme-toggle><span class="ic"><span class="only-light">🌙</span><span class="only-dark">☀️</span></span><span class="only-light">Modo oscuro</span><span class="only-dark">Modo claro</span><span class="ar">›</span></button>
         <a target="_blank" href="https://wa.me/${db().settings.whatsapp}"><span class="ic">💬</span>Atención por WhatsApp<span class="ar">›</span></a>
         <button id="logout"><span class="ic">🚪</span>Cerrar sesión</button>
       </div>`;

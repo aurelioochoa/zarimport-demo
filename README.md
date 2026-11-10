@@ -14,6 +14,14 @@ La app cliente se adapta al tamaño de la pantalla (`css/app.css`, sección "Dis
 - **Tablet** (600 a 899 px): la misma app a todo el ancho, con más columnas de productos.
 - **Escritorio** (900 px o más): tienda web con menú y buscador en la cabecera, producto y carrito en dos columnas, pop-ups centrados y pie de página.
 
+## Modo oscuro
+
+La app cliente y el panel tienen tema claro y oscuro (`js/theme.js`):
+- Al abrir siguen el tema del dispositivo. Si la persona lo cambia con el botón, esa elección se guarda en el navegador y vale para la app y el panel.
+- El botón está en la cabecera de la app (ícono de luna o sol), en "Mi cuenta" y en el menú del panel.
+- Los colores salen de variables en `css/app.css` y `css/admin.css`: el bloque `:root[data-theme="dark"]` solo cambia sus valores. `--vino` es el acento para textos y bordes, y `--marca` el relleno de botones y franjas.
+- Para que abra siempre en claro, en `js/theme.js` cambia `current()` para que devuelva `saved() || 'light'`.
+
 ## Cómo abrirlo
 
 ```bash
