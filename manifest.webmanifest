@@ -1,0 +1,9 @@
+{
+  "name": "Zarimport · La belleza a tu alcance",
+  "short_name": "Zarimport",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#931B4A",
+  "icons": [{ "src": "assets/brand/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}

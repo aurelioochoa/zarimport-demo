@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zarimport · Pruebas de logo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Della+Respira&family=Alike&family=Volkhov:wght@700&family=Prata&family=Satisfy&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --vino:#931B4A; --vino-dark:#6E1236; --lila:#F3DDEC; --lila-soft:#FAF0F6;
+    --gris:#8F9396; --gris-text:#4A4A50; --blanco:#FFFFFF;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Poppins,system-ui,sans-serif;background:var(--lila-soft);color:var(--gris-text)}
+  header{padding:32px 20px 8px;max-width:1200px;margin:auto}
+  h1{font-family:Marcellus,serif;color:var(--vino);font-weight:400;margin:0 0 6px;font-size:30px}
+  header p{margin:0;max-width:760px;line-height:1.55;font-size:14px}
+  .ref{display:flex;gap:16px;flex-wrap:wrap;margin:18px 0 0}
+  .ref figure{margin:0;background:#fff;border-radius:14px;padding:10px;box-shadow:0 2px 10px rgba(147,27,74,.06)}
+  .ref img{height:90px;display:block;border-radius:8px}
+  .ref figcaption{font-size:11px;color:var(--gris);margin-top:6px}
+  main{max-width:1200px;margin:auto;padding:20px;display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:18px}
+  .card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 4px 18px rgba(147,27,74,.07)}
+  .stage{min-height:200px;display:flex;align-items:center;justify-content:center;padding:28px 18px;background:#fff;border-bottom:1px solid #f1e6ee}
+  .stage.lila{background:var(--lila)}
+  .stage.vino{background:var(--vino)}
+  .stage.gris{background:#ECEBEE}
+  .meta{padding:12px 16px 16px;font-size:12.5px;line-height:1.5}
+  .meta b{color:var(--vino);font-size:13.5px;display:block;margin-bottom:2px}
+  .tag{display:inline-block;background:var(--lila-soft);color:var(--vino);border-radius:20px;padding:2px 9px;font-size:11px;margin:4px 4px 0 0}
+
+  .logo{display:flex;flex-direction:column;align-items:center;color:var(--vino);line-height:1}
+  .word{font-size:52px;letter-spacing:.02em}
+  .tagline{display:flex;align-items:baseline;gap:8px;margin-top:10px;color:var(--gris)}
+  .tagline .caps{font-family:Poppins;font-weight:500;font-size:12.5px;letter-spacing:.18em}
+  .tagline .script{font-family:Satisfy,cursive;font-size:24px;color:var(--vino)}
+  .tagline.gray .script{color:var(--gris)}
+  .f-marcellus{font-family:Marcellus,serif;-webkit-text-stroke:1.6px currentColor}
+  .f-della{font-family:'Della Respira',serif;-webkit-text-stroke:1.4px currentColor}
+  .f-alike{font-family:Alike,serif;-webkit-text-stroke:1.2px currentColor}
+  .f-volkhov{font-family:Volkhov,serif;font-weight:700}
+  .f-prata{font-family:Prata,serif;-webkit-text-stroke:.6px currentColor}
+  .sub{display:flex;align-items:center;gap:4px;margin-top:2px;align-self:flex-end;margin-right:6px}
+  .sub span{font-family:Satisfy,cursive;color:var(--gris);font-size:22px}
+  .lips{width:92px;height:26px}
+  .icon{width:120px;height:120px;border-radius:28px;display:flex;align-items:center;justify-content:center;font-size:74px;box-shadow:0 8px 22px rgba(147,27,74,.18)}
+  .icons{display:flex;gap:18px;align-items:center}
+  .icon.small{width:72px;height:72px;border-radius:18px;font-size:44px}
+  .onvino .logo,.onvino .tagline .caps{color:#fff}
+  .onvino .tagline .script{color:var(--lila)}
+  main{grid-template-columns:repeat(auto-fill,minmax(min(340px,100%),1fr))}
+  .ref img{max-width:100%;height:auto;max-height:90px}
+  body{overflow-x:hidden}
+  @media (max-width:480px){.stage>*{zoom:.72}main{padding:16px}header{padding:24px 16px 4px}}
+  footer{max-width:1200px;margin:auto;padding:4px 20px 40px;font-size:12.5px;color:var(--gris)}
+</style>
+</head>
+<body>
+<header>
+  <h1>Pruebas de logo · ZARIMPORT</h1>
+  <p>Probé la tipografía de <b>Zares</b> en <b>ZARIMPORT</b>, con letras color vino (#931B4A, sacado de su logo) sobre fondo blanco. La fuente original parece ser de pago (del estilo Friz Quadrata), así que usé las cuatro gratuitas que más se le parecen. Si tienen el archivo de la fuente original (.ttf u .otf), se la pongo tal cual.</p>
+  <div class="ref">
+    <figure><img src="assets/brand/zares-original.jpg" alt="Logo Zares original"><figcaption>Referencia: Zares beauty</figcaption></figure>
+    <figure><img src="assets/brand/zarimport-original.jpg" alt="Logo Zarimport original"><figcaption>Logo actual de Zarimport</figcaption></figure>
+  </div>
+</header>
+
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="lips" viewBox="0 0 120 34">
+    <path d="M2 17 C14 17 20 5 33 6 C40 6 43 10 47 10 C51 10 54 6 61 6 C74 5 80 17 92 17 C80 21 72 31 47 31 C22 31 14 21 2 17 Z M8 17 C25 19 35 18 47 15 C59 18 69 19 86 17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M92 17 C102 16 110 15 118 15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+  </symbol>
+</svg>
+
+<main>
+  <!-- A -->
+  <div class="card"><div class="stage">
+    <div class="logo"><div class="word f-marcellus">ZARIMPORT</div>
+      <div class="tagline gray"><span class="caps">LA BELLEZA</span><span class="script">a tu alcance</span></div></div>
+  </div><div class="meta"><b>A · Marcellus en mayúsculas</b>Es la que más respeta la forma del logo actual y queda elegante. El eslogan va en gris.<br><span class="tag">Recomendada</span><span class="tag">Fondo blanco</span></div></div>
+
+  <!-- B -->
+  <div class="card"><div class="stage">
+    <div class="logo"><div class="word f-della" style="font-size:58px">Zarimport</div>
+      <div class="sub"><span>beauty</span><svg class="lips" style="color:var(--vino)"><use href="#lips"/></svg></div></div>
+  </div><div class="meta"><b>B · Della Respira, igual que Zares</b>Usa mayúscula solo en la primera letra, "beauty" en gris y los labios, como el logo de Zares. Así las dos marcas se ven de la misma familia.<br><span class="tag">Familia de marca</span></div></div>
+
+  <!-- C -->
+  <div class="card"><div class="stage">
+    <div class="logo"><div class="word f-alike" style="letter-spacing:.06em">ZARIMPORT</div>
+      <div class="tagline"><span class="caps">LA BELLEZA</span><span class="script">a tu alcance</span></div></div>
+  </div><div class="meta"><b>C · Alike con letras más separadas</b>Tiene las letras más abiertas y el "a tu alcance" en vino. Se ve más lujosa.</div></div>
+
+  <!-- D -->
+  <div class="card"><div class="stage">
+    <div class="logo"><div class="word f-volkhov" style="font-size:54px">Zarimport</div>
+      <div class="tagline gray"><span class="caps">LA BELLEZA</span><span class="script">a tu alcance</span></div></div>
+  </div><div class="meta"><b>D · Volkhov Bold</b>Es la más gruesa y la que mejor se lee en tamaño pequeño, como en el celular o en etiquetas.</div></div>
+
+  <!-- E -->
+  <div class="card"><div class="stage lila">
+    <div class="logo"><div class="word f-marcellus">ZARIMPORT</div>
+      <div class="tagline gray"><span class="caps">LA BELLEZA</span><span class="script">a tu alcance</span></div></div>
+  </div><div class="meta"><b>E · Opción A sobre rosado lila</b>Es el mismo logo sobre el rosado pastel de la app, para portadas, banners y empaques.</div></div>
+
+  <!-- F -->
+  <div class="card"><div class="stage vino onvino">
+    <div class="logo"><div class="word f-marcellus">ZARIMPORT</div>
+      <div class="tagline"><span class="caps">LA BELLEZA</span><span class="script">a tu alcance</span></div></div>
+  </div><div class="meta"><b>F · En negativo sobre vino</b>Para la pantalla de inicio de la app, bolsas y stickers.</div></div>
+
+  <!-- G -->
+  <div class="card"><div class="stage">
+    <div class="logo"><div class="word f-prata" style="font-size:50px">ZARIMPORT</div>
+      <div class="tagline gray"><span class="caps">LA BELLEZA</span><span class="script">a tu alcance</span></div></div>
+  </div><div class="meta"><b>G · Prata, más delgada</b>Es más fina y con más contraste, de estilo editorial como una revista de belleza.</div></div>
+
+  <!-- H -->
+  <div class="card"><div class="stage gris">
+    <div class="icons">
+      <div class="icon f-marcellus" style="background:var(--vino);color:#fff">Z</div>
+      <div class="icon f-marcellus" style="background:#fff;color:var(--vino)">Z</div>
+      <div class="icon small f-marcellus" style="background:var(--lila);color:var(--vino)">Z</div>
+    </div>
+  </div><div class="meta"><b>H · Ícono de la app</b>Es la "Z" sola para el ícono del celular en Play Store y App Store. Hay versiones en vino, blanco y lila.</div></div>
+
+  <!-- I -->
+  <div class="card"><div class="stage">
+    <div class="logo" style="flex-direction:row;gap:14px;align-items:center">
+      <div class="icon small f-marcellus" style="background:var(--vino);color:#fff;box-shadow:none">Z</div>
+      <div style="display:flex;flex-direction:column;align-items:flex-start">
+        <div class="word f-marcellus" style="font-size:34px">ZARIMPORT</div>
+        <div class="tagline gray" style="margin-top:4px"><span class="caps" style="font-size:10px">LA BELLEZA</span><span class="script" style="font-size:18px">a tu alcance</span></div>
+      </div>
+    </div>
+  </div><div class="meta"><b>I · Ícono + nombre en una línea</b>Va en la barra superior de la app y en el encabezado de la web.</div></div>
+</main>
+<footer>Colores: vino #931B4A · rosado lila #F3DDEC · gris #8F9396 · blanco #FFFFFF</footer>
+</body>
+</html>

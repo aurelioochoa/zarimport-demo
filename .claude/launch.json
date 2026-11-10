@@ -1,0 +1,6 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "zarimport", "runtimeExecutable": "python", "runtimeArgs": ["tools/serve.py", "5173"], "port": 5173 }
+  ]
+}

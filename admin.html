@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#931B4A">
+<title>Zarimport · Panel</title>
+<link rel="icon" href="assets/brand/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Poppins:wght@400;500;600;700&family=Satisfy&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+<div id="gate" class="gate">
+  <div class="gate-card">
+    <div class="mark">Z</div>
+    <h1>Panel Zarimport</h1>
+    <p>Ingresa tu PIN de administradora</p>
+    <input id="pin" type="password" inputmode="numeric" maxlength="6" placeholder="••••" autocomplete="off">
+    <button class="btn block" id="pin-go">Entrar</button>
+    <small>PIN de demostración: 1234. En la versión final se ingresa con usuario y contraseña seguros.</small>
+  </div>
+</div>
+
+<div id="admin" class="admin" hidden>
+  <aside class="nav">
+    <div class="brand"><span class="mark">Z</span><span>ZARIMPORT<small>Panel de la dueña</small></span></div>
+    <nav id="nav">
+      <a data-s="resumen" class="on">📊 <span>Resumen</span></a>
+      <a data-s="pedidos">🧾 <span>Pedidos</span><b id="n-ped"></b></a>
+      <a data-s="productos">💄 <span>Productos</span></a>
+      <a data-s="promos">🏷️ <span>Promociones</span></a>
+      <a data-s="notifs">🔔 <span>Notificaciones</span></a>
+      <a data-s="soporte">💋 <span>Soporte · Zari</span><b id="n-sop"></b></a>
+      <a data-s="clientes">👩 <span>Clientes</span></a>
+      <a data-s="ajustes">⚙️ <span>Ajustes</span></a>
+    </nav>
+    <a class="to-app" href="index.html" target="_blank">Ver la app ↗</a>
+  </aside>
+  <main class="main" id="main"></main>
+</div>
+<div id="drawer" class="drawer"><div class="drawer-in" id="drawer-in"></div></div>
+<div id="snack" class="snack"></div>
+
+<script src="js/data.js"></script>
+<script src="js/store.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>
